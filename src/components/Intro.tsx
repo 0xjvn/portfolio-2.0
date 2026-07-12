@@ -5,11 +5,11 @@ export default function Intro() {
     <section className="intro">
       <p className="kicker">{identity.role}</p>
       <h1>
-        I work on <em>Ethereum clients</em> — and the backend systems around
+        I work on <em>Ethereum clients</em> - and the backend systems around
         them.
       </h1>
       <p className="lede">
-        I'm {identity.name} — recognized in the{" "}
+        I'm {identity.name} - recognized in the{" "}
         <strong>top 100 contributors</strong> to go-ethereum, the primary
         implementation of a globally distributed, fault-tolerant network
         securing over <strong>$300B</strong> in assets, with merged work

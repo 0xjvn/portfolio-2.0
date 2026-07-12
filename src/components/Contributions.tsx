@@ -7,7 +7,7 @@ export default function Contributions() {
         <span className="index">01</span> Client contributions
       </h2>
       <p className="contrib-preamble">
-        Every PR below is merged and linked — the recent thread is era files
+        Every PR below is merged and linked - the recent thread is era files
         and history expiry, carried across the execution layer, both Lodestar
         consensus clients, and the e2store spec itself. On go-ethereum I rank
         in the top 100 of ~1,400 all-time{" "}
