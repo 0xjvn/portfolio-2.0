@@ -29,7 +29,7 @@ export default function Colophon() {
                   r.title
                 )}
               </span>{" "}
-              — {r.detail}
+              - {r.detail}
             </span>
           ))}
         </FactRow>

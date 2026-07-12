@@ -1,6 +1,6 @@
 /**
  * All site content lives here. Every PR listed below was verified as merged
- * via the GitHub API (author:0xjvn) — links are real. Facts come from the
+ * via the GitHub API (author:0xjvn) - links are real. Facts come from the
  * two source resumes; nothing here is invented.
  */
 
@@ -44,11 +44,11 @@ export const identity = {
 
 export const resumes = [
   {
-    label: "Résumé — protocol / blockchain",
+    label: "Résumé - protocol / blockchain",
     file: "/Jeevan_Siddharth_BC_Resume.pdf",
   },
   {
-    label: "Résumé — backend / software",
+    label: "Résumé - backend / software",
     file: "/Jeevan_Siddharth_SWE_Resume.pdf",
   },
 ];
@@ -56,7 +56,7 @@ export const resumes = [
 export const pqEth2 = {
   title: "PQ-Eth2",
   url: "<PQ_ETH2_BOOK_URL>",
-  line: "A living design document on how Ethereum consensus-layer clients can implement the post-quantum public-key registry — the reasoning, the moving parts, and implementation paths for the relevant parts of Lean Ethereum. Research is ongoing; the document evolves with it.",
+  line: "A living design document on how Ethereum consensus-layer clients can implement the post-quantum public-key registry - the reasoning, the moving parts, and implementation paths for the relevant parts of Lean Ethereum. Research is ongoing; the document evolves with it.",
 };
 
 export const contributions: RepoContribution[] = [
@@ -90,7 +90,7 @@ export const contributions: RepoContribution[] = [
       },
       {
         number: 33832,
-        title: "core: implement EIP-7954 — raise the maximum contract size",
+        title: "core: implement EIP-7954 - raise the maximum contract size",
         url: "https://github.com/ethereum/go-ethereum/pull/33832",
         merged: "2026-03",
         note: "validated against the full execution-specs state test suite",
@@ -174,16 +174,16 @@ export const contributions: RepoContribution[] = [
 ];
 
 export const draftWork = {
-  text: "Also drafted an implementation of EIP-8141 (native account abstraction) in go-ethereum to assess its complexity for client teams — deliberately unmerged; it exists to inform the protocol discussion.",
+  text: "Also drafted an implementation of EIP-8141 (native account abstraction) in go-ethereum to assess its complexity for client teams - deliberately unmerged; it exists to inform the protocol discussion.",
   prLabel: "PR #33954",
   prUrl: "https://github.com/ethereum/go-ethereum/pull/33954",
 };
 
 export const experience: ExperienceEntry[] = [
   {
-    org: "Ethereum — open source",
+    org: "Ethereum - open source",
     role: "Core contributor",
-    period: "2025 — present",
+    period: "2025 - present",
     location: "Remote",
     summary:
       "Ranked in the top 100 of ~1,400 all-time contributors to go-ethereum, the primary Ethereum execution client, securing over $300B in assets.",
@@ -191,7 +191,7 @@ export const experience: ExperienceEntry[] = [
       {
         bullets: [
           "Merged PRs across four repositories on both sides of the merge boundary: go-ethereum (EL), Lodestar and lodestar-z (CL), and the eth-clients e2store format specs.",
-          "Current thread: era files and history expiry — .ere support in geth's era store, Prague pruning points for Hoodi, and matching era-format fixes in both Lodestar implementations and the spec.",
+          "Current thread: era files and history expiry - .ere support in geth's era store, Prague pruning points for Hoodi, and matching era-format fixes in both Lodestar implementations and the spec.",
           "EIP work: implemented EIP-7954 (max contract size) against the execution-specs state tests; drafted EIP-8141 (native account abstraction) to size up client-side complexity.",
         ],
       },
@@ -200,13 +200,13 @@ export const experience: ExperienceEntry[] = [
   {
     org: "Vlinder",
     role: "Blockchain core & backend engineer",
-    period: "2023 — present",
+    period: "2023 - present",
     location: "Bangalore, India",
     groups: [
       {
         heading: "Backend systems",
         bullets: [
-          "Engineered a modular NestJS backend on hexagonal architecture — strict separation of business logic, persistence, and transport.",
+          "Engineered a modular NestJS backend on hexagonal architecture - strict separation of business logic, persistence, and transport.",
           "Run long-lived, failure-prone workflows on Temporal.io with durable state recovery; built a plug-and-play onboarding module other teams adopt with zero rewrites.",
           "Designed a project-planning engine on DAGs and the critical path method for dynamic task scheduling.",
           "Own the AuthN/AuthZ pipeline: OAuth 2.0 with PKCE, JWT-based SSO, and granular RBAC/ABAC policies.",
@@ -215,7 +215,7 @@ export const experience: ExperienceEntry[] = [
       {
         heading: "Protocol engineering",
         bullets: [
-          "Built a custom Geth fork that replaces ECDSA with SLH-DSA post-quantum signatures — rewrote the core/types transaction envelope for quantum-safe payloads.",
+          "Built a custom Geth fork that replaces ECDSA with SLH-DSA post-quantum signatures - rewrote the core/types transaction envelope for quantum-safe payloads.",
           "Cut cryptographic verification from 30ms to 3ms via compiler-level O3 optimization of the build pipeline, a 5× gain in block throughput.",
           "Modified the mempool, propagation, and EVM internals to keep the network stable with much larger PQC signatures.",
         ],
@@ -225,12 +225,12 @@ export const experience: ExperienceEntry[] = [
   {
     org: "National Engineering College / tech summits",
     role: "Visiting mentor & speaker",
-    period: "2024 — present",
+    period: "2024 - present",
     location: "India",
     groups: [
       {
         bullets: [
-          "Industry mentor for a 3-credit university course — designed the syllabus and guided 50+ students through backend engineering and blockchain protocols.",
+          "Industry mentor for a 3-credit university course - designed the syllabus and guided 50+ students through backend engineering and blockchain protocols.",
           "Keynotes and workshops for 500+ attendees on EVM internals, consensus mechanisms, and Web3 infrastructure.",
         ],
       },
@@ -257,20 +257,20 @@ export const skills: { label: string; items: string }[] = [
 
 export const education = {
   degree: "B.E. Computer Science & Engineering",
-  school: "Anna University — National Engineering College",
-  period: "2020 — 2024",
+  school: "Anna University - National Engineering College",
+  period: "2020 - 2024",
   detail: "9.1/10 CGPA, honors, top 5% of cohort",
 };
 
 export const recognition = [
   {
-    title: "STRAT-EX — Chainlink hackathon",
+    title: "STRAT-EX - Chainlink hackathon",
     detail:
       "Automated decentralized trading agent on Chainlink + Uniswap, built with a five-person team across four countries.",
     url: "https://devpost.com/software/unibot-cr9myz",
   },
   {
-    title: "GeeksforGeeks — institution rank 1",
+    title: "GeeksforGeeks - institution rank 1",
     detail: "3,000+ data-structures and algorithms problems solved across platforms.",
   },
 ];

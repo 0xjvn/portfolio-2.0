@@ -1,6 +1,6 @@
 # portfolio.jeevansid.tech
 
-Personal site of Jeevan Siddharth R — Ethereum Core contributor & backend engineer.
+Personal site of Jeevan Siddharth R - Ethereum Core contributor & backend engineer.
 
 Vite + React + TypeScript. Fully static, deployed to Cloudflare Pages at
 `portfolio.jeevansid.tech` (base path `/`).
@@ -22,12 +22,12 @@ npm run preview    # serve dist/ locally
 ## Content
 
 All copy, links, and PR data live in [src/data/site.ts](src/data/site.ts).
-The PQ-Eth2 book URL is the placeholder `<PQ_ETH2_BOOK_URL>` in that file —
+The PQ-Eth2 book URL is the placeholder `<PQ_ETH2_BOOK_URL>` in that file -
 swap it when the book is hosted. Resume PDFs are in `public/`.
 
 ## Deploy (Cloudflare Pages)
 
-Option A — Git integration (recommended): push the repo to GitHub, then in the
+Option A - Git integration (recommended): push the repo to GitHub, then in the
 Cloudflare dashboard go to **Workers & Pages → Create → Pages → Connect to
 Git**, pick the repo, and set:
 
@@ -36,7 +36,7 @@ Git**, pick the repo, and set:
 
 Every push to `main` then deploys automatically.
 
-Option B — direct upload from the CLI:
+Option B - direct upload from the CLI:
 
 ```sh
 npm run build

@@ -9,7 +9,7 @@ export default function Contact() {
           <span className="index">05</span> Contact
         </h2>
         <p className="contact-copy">
-          Email is the fastest way to reach me — for client work, protocol
+          Email is the fastest way to reach me - for client work, protocol
           research, or backend systems that need to hold up under load.
         </p>
         <a className="big-link" href={`mailto:${identity.email}`}>

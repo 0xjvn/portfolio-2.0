@@ -20,7 +20,7 @@ export default function Writing() {
           </a>
         </h3>
         <p>
-          Occasional write-ups on client internals and protocol work —
+          Occasional write-ups on client internals and protocol work -
           including the reasoning behind the EIP-8141 draft implementation.
         </p>
       </div>
