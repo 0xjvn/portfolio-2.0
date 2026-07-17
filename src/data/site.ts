@@ -55,7 +55,7 @@ export const resumes = [
 
 export const pqEth2 = {
   title: "PQ-Eth2",
-  url: "<PQ_ETH2_BOOK_URL>",
+  url: "https://pq-eth2.jeevansid.tech/",
   line: "A living design document on how Ethereum consensus-layer clients can implement the post-quantum public-key registry - the reasoning, the moving parts, and implementation paths for the relevant parts of Lean Ethereum. Research is ongoing; the document evolves with it.",
 };
 
