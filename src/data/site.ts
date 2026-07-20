@@ -32,7 +32,7 @@ export interface ExperienceEntry {
 
 export const identity = {
   name: "Jeevan Siddharth R",
-  role: "Ethereum Core contributor · backend engineer",
+  role: "Core Protocol Engineer · Backend engineer",
   location: "Bangalore, India",
   email: "jeevansiddusb@gmail.com",
   github: "https://github.com/0xjvn",
