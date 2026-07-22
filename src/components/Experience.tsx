@@ -1,12 +1,18 @@
-import { experience } from "../data/site";
+import type { ExperienceEntry } from "../data/site";
 
-export default function Experience() {
+interface Props {
+  index: string;
+  title: string;
+  entries: ExperienceEntry[];
+}
+
+export default function Experience({ index, title, entries }: Props) {
   return (
     <section id="experience" className="section">
       <h2 className="section-label">
-        <span className="index">02</span> Experience
+        <span className="index">{index}</span> {title}
       </h2>
-      {experience.map((entry) => (
+      {entries.map((entry) => (
         <article className="xp-entry" key={entry.org}>
           <div className="xp-head">
             <h3>{entry.org}</h3>

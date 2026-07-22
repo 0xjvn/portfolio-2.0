@@ -1,9 +1,15 @@
 # portfolio.jeevansid.tech
 
-Personal site of Jeevan Siddharth R - Ethereum Core contributor & backend engineer.
+Personal site of Jeevan Siddharth R. A general landing page that acts as an
+entry gate into three tracks:
 
-Vite + React + TypeScript. Fully static, deployed to Cloudflare Pages at
-`portfolio.jeevansid.tech` (base path `/`).
+- `/blockchain` - Ethereum core & protocol work
+- `/software` - backend & distributed systems
+- `/fde` - forward deployed engineering (in progress)
+
+Vite + React + TypeScript, client-side routing with react-router. Fully static,
+deployed to Cloudflare Pages at `portfolio.jeevansid.tech` (base path `/`). Deep
+links work via the SPA fallback configured in `wrangler.jsonc`.
 
 ## Develop
 
@@ -21,9 +27,18 @@ npm run preview    # serve dist/ locally
 
 ## Content
 
-All copy, links, and PR data live in [src/data/site.ts](src/data/site.ts).
-The PQ-Eth2 book URL is the placeholder `<PQ_ETH2_BOOK_URL>` in that file -
-swap it when the book is hosted. Resume PDFs are in `public/`.
+Copy and data are split by track under [src/data/](src/data/):
+
+- [site.ts](src/data/site.ts) - shared identity, the three track definitions
+  (landing rows), and all blockchain content (PRs, experience, PQ-Eth2).
+- [software.ts](src/data/software.ts) - SWE-resume-framed content.
+- [fde.ts](src/data/fde.ts) - the forward-deployed-engineering thesis and
+  roadmap.
+
+Pages live in [src/pages/](src/pages/); shared header/footer chrome is in
+[src/components/Chrome.tsx](src/components/Chrome.tsx). Each track carries its
+own accent color via a `data-track` attribute (see the top of
+[src/index.css](src/index.css)). Resume PDFs are in `public/`.
 
 ## Deploy (Cloudflare Pages)
 

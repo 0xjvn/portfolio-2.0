@@ -43,6 +43,36 @@
   }
 }
 
+/* Per-track accents. One restrained hue each, overriding --accent on a wrapper
+   that carries data-track. Base (blockchain) stays the terracotta above. */
+[data-track="blockchain"] {
+  --accent: #9a3b26;
+  --accent-hover: #7c2e1c;
+}
+[data-track="software"] {
+  --accent: #345f7a;
+  --accent-hover: #26485e;
+}
+[data-track="fde"] {
+  --accent: #7c5e18;
+  --accent-hover: #614912;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-track="blockchain"] {
+    --accent: #d97757;
+    --accent-hover: #e89477;
+  }
+  [data-track="software"] {
+    --accent: #7fabca;
+    --accent-hover: #9cc0d9;
+  }
+  [data-track="fde"] {
+    --accent: #cba85a;
+    --accent-hover: #d9bd7f;
+  }
+}
+
 /* ---------------------------------------------------------------------------
    Base
 --------------------------------------------------------------------------- */
@@ -569,4 +599,398 @@ p {
 
 .site-footer a:hover {
   color: var(--accent);
+}
+
+/* ---------------------------------------------------------------------------
+   Track header (sub-page chrome)
+--------------------------------------------------------------------------- */
+
+.track-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+
+.track-header .home {
+  text-decoration: none;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.track-header .home:hover {
+  color: var(--accent);
+}
+
+.track-header .home .arrow {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.track-switch {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.track-switch a {
+  text-decoration: none;
+  color: var(--ink-faint);
+}
+
+.track-switch a:hover {
+  color: var(--ink);
+}
+
+.track-switch a.active {
+  color: var(--accent);
+}
+
+.track-switch a.active::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------------------
+   Landing / index
+--------------------------------------------------------------------------- */
+
+.landing-masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
+.landing-masthead .name {
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.landing-hero {
+  padding: clamp(3.5rem, 12vh, 8rem) 0 clamp(3rem, 8vh, 5.5rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.landing-hero .kicker {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 1.75rem;
+}
+
+.landing-hero h1 {
+  font-size: var(--step-3);
+  font-weight: 460;
+  letter-spacing: -0.015em;
+  max-width: 20ch;
+  margin-bottom: 1.75rem;
+}
+
+.landing-hero h1 em {
+  font-style: italic;
+  font-weight: 430;
+}
+
+.landing-hero .lede {
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 56ch;
+}
+
+.tracks {
+  padding-top: 0.5rem;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr auto;
+  gap: 0.4rem 1.75rem;
+  align-items: start;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: background 140ms ease;
+}
+
+.track-row:hover {
+  background: var(--paper-raised);
+}
+
+.track-row .t-index {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  color: var(--accent);
+  padding-top: 0.35rem;
+}
+
+.track-row .t-body {
+  min-width: 0;
+}
+
+.track-row .t-discipline {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.track-row .t-status {
+  color: var(--ink-faint);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.track-row h2 {
+  font-size: var(--step-2);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  transition: color 140ms ease;
+}
+
+.track-row:hover h2 {
+  color: var(--accent);
+}
+
+.track-row .t-blurb {
+  color: var(--ink-soft);
+  max-width: 54ch;
+  margin-bottom: 0.9rem;
+}
+
+.track-row .t-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
+.track-row .t-proof span:not(:last-child)::after {
+  content: "·";
+  margin-left: 0.75rem;
+  color: var(--line-strong);
+}
+
+.track-row .t-enter {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--accent);
+  white-space: nowrap;
+  padding-top: 0.4rem;
+  transition: transform 140ms ease;
+}
+
+.track-row:hover .t-enter {
+  transform: translateX(3px);
+}
+
+@media (max-width: 620px) {
+  .track-row {
+    grid-template-columns: 2.5rem 1fr;
+  }
+  .track-row .t-enter {
+    grid-column: 2;
+    padding-top: 0.25rem;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Shared page intro (software / fde heroes)
+--------------------------------------------------------------------------- */
+
+.page-intro {
+  padding: clamp(2.75rem, 8vh, 5rem) 0 3.5rem;
+}
+
+.page-intro .kicker {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.page-intro h1 {
+  font-size: var(--step-3);
+  font-weight: 460;
+  letter-spacing: -0.015em;
+  max-width: 20ch;
+  margin-bottom: 1.75rem;
+}
+
+.page-intro h1 em {
+  font-style: italic;
+  font-weight: 430;
+  color: var(--accent);
+}
+
+.page-intro .lede {
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 58ch;
+}
+
+.page-intro .lede p {
+  margin-bottom: 1rem;
+}
+
+.page-intro .lede p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------------
+   Prose blocks (thesis, both-sides)
+--------------------------------------------------------------------------- */
+
+.prose-block + .prose-block {
+  margin-top: 2.25rem;
+}
+
+.prose-block h3 {
+  font-size: var(--step-2);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.prose-block p {
+  color: var(--ink-soft);
+  max-width: 60ch;
+}
+
+.prose-block p:last-child {
+  margin-bottom: 0;
+}
+
+.lead-line {
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------------------------------------------------------------------------
+   Numbered parts (FDE job / build weeks)
+--------------------------------------------------------------------------- */
+
+.parts {
+  display: grid;
+  gap: 0;
+}
+
+.part {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 0.35rem 1.75rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.part:first-child {
+  border-top-color: var(--line-strong);
+}
+
+.part .p-num {
+  font-family: var(--font-mono);
+  font-size: var(--step-1);
+  color: var(--accent);
+}
+
+.part h4 {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+
+.part .p-week {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+  margin-bottom: 0.35rem;
+}
+
+.part p {
+  color: var(--ink-soft);
+  max-width: 58ch;
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .part {
+    grid-template-columns: 2.25rem 1fr;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Highlight callout (software protocol block, fde de-risk / reference)
+--------------------------------------------------------------------------- */
+
+.callout {
+  border-left: 2px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.callout p {
+  color: var(--ink-soft);
+  max-width: 58ch;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.inline-link {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.inline-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.reference-note {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
 }
