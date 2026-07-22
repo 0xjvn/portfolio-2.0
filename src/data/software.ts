@@ -43,8 +43,6 @@ export const softwareWork: ExperienceEntry = {
 
 export const softwareProtocolHighlight = {
   heading: "From the protocol side",
-  intro:
-    "The same instincts show up in my open-source work on Ethereum's execution client, the largest distributed system I've touched.",
   bullets: [
     "Ranked in the top 100 contributors to go-ethereum, the primary implementation of a globally distributed, fault-tolerant network securing over $300B in assets.",
     "Integrated state-transition logic into the core codebase and standardized RPC APIs by embedding metadata, validating execution against the full test suites (PR #33832, PR #33709).",

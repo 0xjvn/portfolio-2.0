@@ -7,11 +7,11 @@
  */
 
 export const fdeIntro = {
-  kicker: "Forward Deployed Engineering · building toward it",
+  kicker: "Forward Deployed Engineering · what I offer",
   headline: "Where intelligence meets the business.",
   lede: [
     "Every company can now buy intelligence. When the model is a commodity, having it stops being an advantage. The edge moves to deployment: where it's used, how, and why.",
-    "That gap between a capable model and a business that actually runs on it is the Forward Deployed Engineer's job. It's the direction I'm building toward, and this page is where I think out loud about it.",
+    "Closing the gap between a capable model and a business that actually runs on it is what I offer. Here's how I think about the work, and how I'd approach it.",
   ],
 };
 
@@ -77,15 +77,15 @@ export interface BuildWeek {
 }
 
 export const building = {
-  heading: "What I'm building",
+  heading: "What I deliver",
   intro:
-    "The way to learn this is not to read about it. It's to do the job before you have the title, and end up with evidence that you can. That's the arc I'm working through right now.",
+    "Given a workflow worth automating, here is the shape of how I take it from an idea to something a business can actually rely on.",
   weeks: [
     {
       week: "01",
       title: "An agent that closes a real loop",
       detail:
-        "Pick one narrow domain, learn it in granular detail, and build an agent that completes an actual end-to-end task, with full logging and an audit trail so its work can be trusted.",
+        "Learn the target domain in granular detail and build an agent that completes an actual end-to-end task, with full logging and an audit trail so its work can be trusted.",
     },
     {
       week: "02",
@@ -101,16 +101,9 @@ export const building = {
     },
     {
       week: "04",
-      title: "Defend it like an FDE",
+      title: "A defensible business case",
       detail:
-        "This is the business half: the pain point, why AI belongs there, the architecture, the accuracy, the economics. Pitch it, find out what I got wrong, and carry that into the next build.",
+        "Tie it back to the business half: the pain point, why AI belongs there, the architecture, the accuracy, the economics. The result is a system that earns its place, with the numbers to prove it.",
     },
   ] as BuildWeek[],
-  derisk:
-    "A company often sees an internal AI project as risk: what if it fails? The answer is to run the audit for free, de-risk it, and charge only once they can see the value. It's early, and the demand for people who can actually do this is real.",
-  reference: {
-    text: "Currently working through",
-    label: "FDE in 30 Days",
-    url: "https://learn.varickagents.com/fde-in-30-days",
-  },
 };

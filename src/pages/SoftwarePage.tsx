@@ -28,7 +28,6 @@ export default function SoftwarePage() {
         <h2 className="section-label">
           <span className="index">02</span> {softwareProtocolHighlight.heading}
         </h2>
-        <p className="lead-line">{softwareProtocolHighlight.intro}</p>
         <div className="callout">
           {softwareProtocolHighlight.bullets.map((b) => (
             <p key={b}>{b}</p>

@@ -684,7 +684,7 @@ p {
 }
 
 .landing-hero {
-  padding: clamp(3.5rem, 12vh, 8rem) 0 clamp(3rem, 8vh, 5.5rem);
+  padding: clamp(1.75rem, 4vh, 3rem) 0 clamp(3rem, 8vh, 5.5rem);
   border-bottom: 1px solid var(--line);
 }
 

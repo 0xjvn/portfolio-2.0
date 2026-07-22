@@ -58,24 +58,24 @@ export interface Track {
 /** The three doors on the landing page. Order here is the display order. */
 export const tracks: Track[] = [
   {
-    id: "blockchain",
-    index: "01",
-    path: "/blockchain",
-    name: "Blockchain Engineering",
-    discipline: "Ethereum core & protocol",
-    blurb:
-      "Merged work in the clients that run Ethereum, on both the execution and consensus layers, plus a book on the network's post-quantum future.",
-    proof: ["go-ethereum · top 100", "Lodestar · lodestar-z", "PQ-Eth2 author"],
-  },
-  {
     id: "software",
-    index: "02",
+    index: "01",
     path: "/software",
     name: "Software Engineering",
     discipline: "Backend & distributed systems",
     blurb:
       "Structured backends and fault-tolerant distributed systems in TypeScript and Go. Orchestration, durable workflows, and low-level performance.",
     proof: ["NestJS · Temporal", "hexagonal architecture", "0-to-1 systems"],
+  },
+  {
+    id: "blockchain",
+    index: "02",
+    path: "/blockchain",
+    name: "Blockchain Engineering",
+    discipline: "Ethereum core & protocol",
+    blurb:
+      "Merged work in the clients that run Ethereum, on both the execution and consensus layers, plus a book on the network's post-quantum future.",
+    proof: ["go-ethereum · top 100", "Lodestar · lodestar-z", "PQ-Eth2 author"],
   },
   {
     id: "fde",
@@ -86,7 +86,6 @@ export const tracks: Track[] = [
     blurb:
       "The discipline of putting intelligence to work inside a real business: audit the workflow, prove it with evals, deploy it where the value is.",
     proof: ["agents that recover", "evals over vibes", "business + code"],
-    status: "in progress",
   },
 ];
 

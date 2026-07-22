@@ -69,27 +69,13 @@ export default function FdePage() {
             <div className="part" key={w.week}>
               <span className="p-num">{w.week}</span>
               <div>
-                <p className="p-week">Week {w.week}</p>
+                <p className="p-week">Phase {w.week}</p>
                 <h4>{w.title}</h4>
                 <p>{w.detail}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="callout" style={{ marginTop: "2rem" }}>
-          <p>{building.derisk}</p>
-        </div>
-        <p className="reference-note">
-          {building.reference.text}{" "}
-          <a
-            className="inline-link"
-            href={building.reference.url}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {building.reference.label} ↗
-          </a>
-        </p>
       </section>
     </Chrome>
   );
